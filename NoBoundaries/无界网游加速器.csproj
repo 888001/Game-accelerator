@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A548792D-0B69-451F-BAFA-9C89659D3A80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NoBoundaries</RootNamespace>
+    <AssemblyName>无界网游加速器</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Costura\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="NewLife.Core, Version=8.10.7749.40004, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Costura\NewLife.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="XCode, Version=10.0.7749.40012, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Costura\XCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\SSRController.cs" />
+    <Compile Include="Forms\BaseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseFrm.Designer.cs">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChooseLineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseLineFrm.Designer.cs">
+      <DependentUpon>ChooseLineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DBManager.cs" />
+    <Compile Include="Common\EncryptsHelper.cs" />
+    <Compile Include="Common\NetWorkHelper.cs" />
+    <Compile Include="Controllers\TUNTAPController.cs" />
+    <Compile Include="Forms\GameListFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameListFrm.Designer.cs">
+      <DependentUpon>GameListFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Biz\Edition.Biz.cs" />
+    <Compile Include="Model\Biz\Game.Biz.cs" />
+    <Compile Include="Model\Biz\Shadowsocks.Biz.cs" />
+    <Compile Include="Model\Biz\ShadowsocksR.Biz.cs" />
+    <Compile Include="Model\Biz\User.Biz.cs" />
+    <Compile Include="Model\Edition.cs" />
+    <Compile Include="Model\Game.cs" />
+    <Compile Include="Model\Shadowsocks.cs" />
+    <Compile Include="Model\ShadowsocksR.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="MyControl\IconList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\.Designer.cs">
+      <DependentUpon>IconList.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyGameList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyGameList.Designer.cs">
+      <DependentUpon>MyGameList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySetting.cs" />
+    <Compile Include="MySetting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>MySetting.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegisterFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterFrm.Designer.cs">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\TUNTAP.cs" />
+    <EmbeddedResource Include="Forms\BaseFrm.resx">
+      <DependentUpon>BaseFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseLineFrm.resx">
+      <DependentUpon>ChooseLineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameListFrm.resx">
+      <DependentUpon>GameListFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\IconList.resx">
+      <DependentUpon>IconList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\MyGameList.resx">
+      <DependentUpon>MyGameList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterFrm.resx">
+      <DependentUpon>RegisterFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MySetting.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySetting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMD.bat" />
+    <None Include="Resources\menu_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\net_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkg_btnStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkg_State.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_menu_about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_menu_loginout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_menu_repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_menu_set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_menu_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bin\Accelerator.exe" />
+    <Content Include="Costura\CSkin.dll" />
+    <Content Include="Costura\NewLife.Core.dll" />
+    <Content Include="Costura\XCode.dll" />
+    <Content Include="favicon.ico" />
+    <None Include="Resources\hide_enter.png" />
+    <None Include="Resources\hide_down.png" />
+    <None Include="Resources\hide_normal.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\cmroute.dll" />
+    <None Include="Resources\Accelerator.exe" />
+    <None Include="Resources\游戏.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
